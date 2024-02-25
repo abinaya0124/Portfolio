@@ -8,7 +8,6 @@ const Hero = () => {
       <div
         className=" w-[100%] lg:w-[90%] h-[60vh] md:h-[100vh] relative "
         style={{
-          // background: "rgb(244,137,176)",
           background:
             "linear-gradient(55deg, rgba(244,137,176,1) 1%, rgba(255,195,160,1) 70%)",
         }}
