@@ -20,14 +20,16 @@
   position: absolute;
   margin-top: -11rem;
   margin-left: -5rem;
-  font-size: 1.5rem !important;
+  font-size: 1.3rem !important;
   color: rgb(253, 20, 59) !important;
+  padding: 0.7rem !important;
 }
 .LeftBtn {
   position: absolute;
   margin-top: -11rem;
   margin-left: -8rem;
-  font-size: 1.5rem !important;
+  font-size: 1.3rem !important;
+  padding: 0.7rem !important;
   color: rgb(253, 20, 59) !important;
 }
 @media screen and (max-width: 1000px) {

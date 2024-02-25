@@ -2,13 +2,15 @@ import { IoSchoolSharp } from "react-icons/io5";
 
 const Qualification = () => {
   return (
-    <div className="flex justify-center">
+    <section className="flex justify-center">
       <div>
-        <div className="flex gap-3 mb-5 mt-5">
+        <div className="flex gap-3 mb-5 mt-8">
           <IoSchoolSharp className="mt-1 text-2xl md:text-xl" />
           <div>
-            <h3 className="font-bold text-gray-700">Btech Biotechnology</h3>
-            <p className="font-semibold text-gray-500">
+            <h3 className="font-bold text-gray-700 md:text-lg">
+              Btech Biotechnology
+            </h3>
+            <p className="font-semibold text-gray-500 ">
               B.S.Abdur Rahmon Crescent Institute of
               <br /> Science and Technology
             </p>
@@ -18,7 +20,9 @@ const Qualification = () => {
         <div className="flex gap-3">
           <IoSchoolSharp className="mt-1 text-2xl md:text-xl" />
           <div>
-            <h3 className="font-bold text-gray-700">Higher Secondary</h3>
+            <h3 className="font-bold text-gray-700 md:text-lg">
+              Higher Secondary
+            </h3>
             <p className="font-semibold text-gray-500">
               The Velammal International School
             </p>
@@ -26,7 +30,7 @@ const Qualification = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

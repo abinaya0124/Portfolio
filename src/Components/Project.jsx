@@ -2,6 +2,9 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./SwipperButtons.css";
 import { useEffect, useState } from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { GrCaretNext } from "react-icons/gr";
+import { GrCaretPrevious } from "react-icons/gr";
 
 const Project = () => {
   const projects = [
@@ -91,47 +94,35 @@ const Project = () => {
       >
         <SliderButtons />
         {projects.map((item, id) => (
-          <SwiperSlide>
+          <SwiperSlide key={id}>
             <div
-              key={id}
-              className="bg-gray-200 border border-gray-200 h-[18rem] md:h-[21rem] lg:h-[14rem] rounded-lg shadow "
+              className="bg-gray-200 border border-gray-200 h-[18rem] md:h-[21rem] lg:h-[14rem] rounded-lg "
+              style={{ boxShadow: "0 0 6px rgba(0, 0, 0, 0.2)" }}
             >
-              <div className="p-5">
-                <a href="#">
-                  <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-700">
-                    {item.title}
-                  </h5>
-                </a>
+              <div className="p-5 ">
+                <h5 className="mb-2 text-xl md:text-2xl font-bold tracking-tight text-gray-700 ">
+                  {item.title}
+                </h5>
                 <p className="mb-3 font-normal text-gray-500 pt-3 h-28 md:h-24 lg:h-16">
                   {item.about}
                 </p>
                 <a
                   href="#"
-                  className="inline-flex items-center px-3 mt-6 lg:mt-9 md:mt-20 py-2 text-sm font-medium text-center text-white bg-orange-500 rounded-lg focus:outline-none "
+                  className="inline-flex items-center px-3 mt-6 text-gray-600 font-bold lg:mt-9 md:mt-20 py-2 text-sm text-center bg-orange-500 rounded-lg focus:outline-none "
+                  style={{
+                    background: "rgb(238,174,202)",
+                    background:
+                      "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
+                  }}
                 >
-                  Read more
-                  <svg
-                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
+                  View Code
+                  <FaArrowRightLong className="ml-2" />
                 </a>
               </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* </div> */}
     </section>
   );
 };
@@ -142,10 +133,10 @@ const SliderButtons = () => {
   return (
     <div className="relative r-buttons mt-5 flex">
       <button className="LeftBtn" onClick={() => swiper.slidePrev()}>
-        &lt;
+        <GrCaretPrevious />
       </button>
       <button className="rightBtn" onClick={() => swiper.slideNext()}>
-        &gt;
+        <GrCaretNext />
       </button>
     </div>
   );

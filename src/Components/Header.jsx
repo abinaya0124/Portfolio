@@ -9,7 +9,6 @@ const Header = () => {
 
   const handleClick = (nav) => {
     setActive(nav);
-    // Close the navigation menu after clicking a link
     setShow(false);
   };
 
@@ -65,44 +64,43 @@ const Header = () => {
           </div>
         </div>
       )}
-      {/* Header for larger screens */}
-      <div className="hidden md:flex flex-end bg-gray-100 w-full justify-end gap-9  -mt-6">
-        <NavLink
-          to="/"
-          className={`hover:border-b-2 border-purple-950 ${
+      <div className="hidden md:flex flex-end text-gray-500 font-bold bg-gray-100 w-full justify-end gap-9  -mt-6">
+        <a
+          href="#"
+          className={`hover:translate-x-2 ${
             active === "/" ? "text-orange-500" : ""
           }`}
           onClick={() => handleClick("/")}
         >
           Home
-        </NavLink>
-        <NavLink
-          to="/project"
-          className={`hover:border-b-2 border-purple-950 ${
+        </a>
+        <a
+          href="#project"
+          className={`hover:translate-x-2  ${
             active === "/project" ? "text-orange-500" : ""
           }`}
           onClick={() => handleClick("/project")}
         >
           Project
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={`hover:border-b-2 border-purple-950 ${
+        </a>
+        <a
+          href="#about"
+          className={`hover:translate-x-2 ${
             active === "/about" ? "text-orange-500" : ""
           }`}
           onClick={() => handleClick("/about")}
         >
           About
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={`hover:border-b-2 border-purple-950 ${
+        </a>
+        <a
+          href="#contact"
+          className={`hover:translate-x-2  ${
             active === "/contact" ? "text-orange-500" : ""
           }`}
           onClick={() => handleClick("/contact")}
         >
           Contact
-        </NavLink>
+        </a>
       </div>
     </div>
   );

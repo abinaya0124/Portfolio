@@ -6,22 +6,15 @@ import { Link, Route, Routes } from "react-router-dom";
 import Project from "./Components/Project";
 import Contact from "./Components/Contact";
 import About from "./Components/About";
-
+// EDC7B7 EEE2DC
 const App = () => {
   return (
-    <div>
+    <div className="bg-[#f0fbf6]">
       <Header />
       <Hero />
-      <a href="#project">
-        <Project />
-      </a>
-      <a href="#about">
-        <About />
-      </a>
-      <a href="#contact">
-        <Contact />
-      </a>
-      {/* <Footer /> */}
+      <Project />
+      <About />
+      <Contact />
     </div>
   );
 };

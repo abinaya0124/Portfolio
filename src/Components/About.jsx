@@ -5,15 +5,13 @@ import Experience from "./Experience";
 const About = () => {
   const [active, setActive] = useState("Qualification");
   return (
-    <section id="" className=" ">
-      {/* <h1 className="text-center text-3xl font-bold m-10">Qualification</h1>
-      <h1 className="text-center text-3xl font-bold m-10">Experience</h1> */}
-      <div className="flex justify-center items-center gap-5 text-2xl md:text-3xl font-bold ">
+    <section id="about">
+      <div className="flex justify-center items-center gap-5 text-2xl md:text-3xl font-bold">
         {["Qualification", "Experience"].map((page) => (
           <div
             key={page}
             onClick={() => setActive(page)}
-            className={`pb-3 mt-7 mb-5 page ${
+            className={`pb-3 mt-11 mb-5 page ${
               active === page ? "selected" : ""
             } 
             ${
