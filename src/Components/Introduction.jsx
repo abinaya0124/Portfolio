@@ -2,7 +2,7 @@ import { FaDownload } from "react-icons/fa6";
 
 const IntroduceSection = () => {
   return (
-    <div className=" h-[580px] md:h-full  border-none  ">
+    <div className=" h-[430px] md:h-full  border-none  ">
       <h1 className="text-6xl lg:text-8xl  ml-4  md:ml-3  md:m-5">Hello</h1>
       <p className="m-5 mt-6 text-justify w-[90%] md:w-[70%] text-gray-700  leading-7 ">
         I am a recent graduate with a degree in Biotechnology, I am on a mission
