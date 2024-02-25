@@ -10,10 +10,11 @@ const Project = () => {
   const projects = [
     {
       id: 1,
-      title: "Movie-Ticket-Booking",
+      title: " Movie-Ticket-Booking",
       technology: "React JS, Tailwind CSS",
       about:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "Developed using React JS and styled with Tailwind CSS, this platform allows users to select movies, book tickets, and view the total ticket prices.",
+      link: "https://github.com/abinaya0124/Movie-Ticket-Booking",
     },
     {
       id: 2,
@@ -21,6 +22,7 @@ const Project = () => {
       technology: "React JS, Bootstrap",
       about:
         "Built a responsive News Web App with React.js and Bootstrap, featuring category-based filtering and real-time updates.",
+      link: "https://github.com/abinaya0124/News-Application",
     },
     {
       id: 3,
@@ -28,41 +30,40 @@ const Project = () => {
       technology: "MERN Stack",
       about:
         "Developed a comprehensive blog application using the MERN stack, allowing users to create, view, and manage blog posts efficiently.",
+      link: "https://github.com/abinaya0124/Blog-Application",
     },
+
     {
       id: 4,
-      title: "Login-Register",
-      technology: "MERN Stack",
-      about:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
-    },
-    {
-      id: 5,
       title: "Expense-Tracker",
       technology: "React JS, Tailwind CSS",
       about:
         "Developed an efficient Expense Tracker using React.js, leveraging the Context API for seamless state management.",
+      link: "https://github.com/abinaya0124/Expense-Tracker",
     },
     {
-      id: 6,
+      id: 5,
       title: "  Quiz-Application ",
       technology: "React JS, Bootstrap",
       about:
         "Created an interactive application with React.js and Bootstrap, integrating single-choice questions, scoring, and result calculation.",
+      link: "https://github.com/abinaya0124/Quiz-Application",
     },
     {
-      id: 7,
+      id: 6,
       title: "Weather-Web-App ",
       technology: "React JS",
       about:
         "Built a React.js application to fetch and display real-time weather data by integrating external APIs.",
+      link: "https://github.com/abinaya0124/Weather-Web-App",
     },
     {
-      id: 8,
+      id: 7,
       title: " TODO-List-App ",
       technology: "React JS",
       about:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+        "The To-Do List project created using React JS, it enables addition, deletion, and updating of tasks. ",
+      link: "https://github.com/abinaya0124/TODO-List-App",
     },
   ];
   const [slidesPerView, setSlidesPerView] = useState(3);
@@ -107,7 +108,7 @@ const Project = () => {
                   {item.about}
                 </p>
                 <a
-                  href="#"
+                  href={item.link}
                   className="inline-flex items-center px-3 mt-6 text-gray-600 font-bold lg:mt-9 md:mt-20 py-2 text-sm text-center bg-orange-500 rounded-lg focus:outline-none "
                   style={{
                     background: "rgb(238,174,202)",
