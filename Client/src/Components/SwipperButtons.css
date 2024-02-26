@@ -1,10 +1,6 @@
 .r-buttons {
   position: relative;
   gap: 1rem;
-  /* margin-top: 100rem !important; */
-  /* bottom: 0rem;
-  right: 0; */
-  /* z-index: 9; */
 }
 .r-buttons button {
   font-size: 1.2rem;
@@ -32,7 +28,7 @@
   padding: 0.7rem !important;
   color: rgb(253, 20, 59) !important;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
   .rightBtn {
     position: absolute;
     margin-top: -13rem;
@@ -42,5 +38,17 @@
     position: absolute;
     margin-top: -13rem;
     margin-left: -12rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .rightBtn {
+    position: absolute;
+    margin-top: -14.5rem;
+    margin-left: -5rem;
+  }
+  .LeftBtn {
+    position: absolute;
+    margin-top: -14.5rem;
+    margin-left: -8rem;
   }
 }
