@@ -6,9 +6,9 @@ import { MdLocationOn } from "react-icons/md";
 const Contact = () => {
   return (
     <section id="contact">
-      <h3 className="text-center text-3xl font-bold m-10 mt-20 ">Contact</h3>
+      <h3 className="text-center text-3xl font-bold m-10 md:mt-20 ">Contact</h3>
       <div className="md:flex justify-center gap-10 items-center p-3">
-        <div className=" w-72 h-52 p-5 pt-12 pl-10 rounded-lg flex flex-col">
+        <div className=" w-72 h-52 md:p-5 md:pt-12 pl-10 rounded-lg flex flex-col">
           <div className="flex gap-3 mb-3">
             <MdEmail className="mt-1.5" />
             <div>
@@ -26,7 +26,7 @@ const Contact = () => {
         </div>
         <div>
           <div className="flex justify-center items-center">
-            <label className="relative cursor-pointer mb-8 mt-5">
+            <label className="relative cursor-pointer mb-8 md:mt-5">
               <input
                 type="text"
                 placeholder="Name"
