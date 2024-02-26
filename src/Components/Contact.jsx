@@ -1,7 +1,8 @@
-import { useState } from "react";
+import ScrollToTop from "react-scroll-to-top";
 import { GrSend } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 import { MdLocationOn } from "react-icons/md";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -77,6 +78,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop
+        smooth
+        component={<MdOutlineKeyboardDoubleArrowUp className="text-3xl ml-1" />}
+      />
     </section>
   );
 };
