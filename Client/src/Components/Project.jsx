@@ -109,7 +109,7 @@ const Project = () => {
                 </p>
                 <a
                   href={item.link}
-                  className="inline-flex items-center px-3 mt-6 text-gray-600 font-bold lg:mt-9 md:mt-20 py-2 text-sm text-center bg-orange-500 rounded-lg focus:outline-none "
+                  className="inline-flex items-center px-3 mt-6 text-gray-600 font-bold lg:mt-9 md:mt-20 py-2 text-sm text-center bg-orange-500 rounded-lg focus:outline-none transform transition-all hover:scale-110"
                   style={{
                     background: "rgb(238,174,202)",
                     background:

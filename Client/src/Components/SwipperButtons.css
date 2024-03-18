@@ -28,6 +28,14 @@
   padding: 0.7rem !important;
   color: rgb(253, 20, 59) !important;
 }
+.rightBtn:hover {
+  color: rgb(2, 87, 59) !important;
+  background: #d0f2e7 !important;
+}
+.LeftBtn:hover {
+  color: rgb(2, 87, 59) !important;
+  background: #d0f2e7 !important;
+}
 @media screen and (max-width: 768px) {
   .rightBtn {
     position: absolute;

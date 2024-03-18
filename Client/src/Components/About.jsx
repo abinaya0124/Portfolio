@@ -11,7 +11,7 @@ const About = () => {
           <div
             key={page}
             onClick={() => setActive(page)}
-            className={`pb-3 mt-11 mb-5 page cursor-pointer ${
+            className={`pb-3 mt-11 mb-5 page cursor-pointer hover:text-gray-500 ${
               active === page ? "selected" : ""
             }
             ${

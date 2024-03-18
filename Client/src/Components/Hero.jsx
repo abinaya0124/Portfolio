@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="bg-white absolute w-[95%] m-2 mt-7 md:mt-0 md:m-0 md:w-[70%] h-[290px] rounded-[5px] shadow-pink-200 shadow-lg flex flex-col items-center top-[15%] md:top-[30%] md:left-[50%]">
           <img
             src="https://pxbar.com/wp-content/uploads/2023/09/cartoon-photo-girl.jpg"
-            className="rounded-full w-28 m-5 mb-3"
+            className="rounded-full w-28 m-5 mb-3 animate-pulse"
           />
           <h3 className="border-b-2 mb-2 pb-1 font-bold text-purple-900">
             Abinaya P
