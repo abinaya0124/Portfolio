@@ -15,7 +15,7 @@ const IntroduceSection = () => {
       <a
         href="abinayaResume.pdf"
         download="Resume.pdf"
-        className="transition-all flex gap-3 text-gray-600 font-bold mt-8 px-6 m-5 py-3 rounded-3xl w-fit"
+        className="transform transition-all hover:scale-110 flex gap-3 text-gray-600 font-bold mt-8 px-6 m-5 py-3 rounded-3xl w-fit"
         style={{
           background:
             "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",

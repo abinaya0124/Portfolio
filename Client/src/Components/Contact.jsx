@@ -92,7 +92,7 @@ const Contact = () => {
             )}
             <div className="flex justify-center items-center mb-3">
               <button
-                className=" py-2 w-96 gap-3 flex justify-center items-center rounded-lg text-gray-700 font-bold text-lg "
+                className=" py-2 w-96 gap-3 flex justify-center items-center rounded-lg text-gray-700 font-bold text-lg transform transition-all hover:scale-110"
                 onClick={handleSubmit}
                 style={{
                   background:
